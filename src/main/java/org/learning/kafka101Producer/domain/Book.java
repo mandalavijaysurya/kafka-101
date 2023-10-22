@@ -1,4 +1,5 @@
-package org.learning.kafka101.domain;
+package org.learning.kafka101Producer.domain;
+
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -8,6 +9,6 @@ public record Book(
         Integer bookId,
                    @NotBlank
                    String bookName,
-                   @NotBlank
+                   @NotNull
                    String bookAuthor) {
 }

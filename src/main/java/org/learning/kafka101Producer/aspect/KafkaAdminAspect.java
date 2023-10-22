@@ -1,7 +1,6 @@
-package org.learning.kafka101.aspect;
+package org.learning.kafka101Producer.aspect;
 
 import lombok.extern.slf4j.Slf4j;
-import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -11,8 +10,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @Slf4j
 public class KafkaAdminAspect {
-    @Around(value = "execution(* org.learning.kafka101.configuration.KafkaAdminConfiguration.*(..))" +
-            "|| execution(* org.learning.kafka101.producer.LibraryEventProducer.*(..))")
+    @Around(value = "execution(* org.learning.kafka101Producer.configuration.KafkaAdminConfiguration.*(..))" +
+            "|| execution(* org.learning.kafka101Producer.producer.LibraryEventProducer.*(..))")
     public Object logAroundAdminConfiguration(ProceedingJoinPoint pjp) throws Throwable {
         long startTime = System.currentTimeMillis();
         String methodName = pjp.getSignature().getName();

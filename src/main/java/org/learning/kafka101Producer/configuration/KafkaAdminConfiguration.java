@@ -1,4 +1,4 @@
-package org.learning.kafka101.configuration;
+package org.learning.kafka101Producer.configuration;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.beans.factory.annotation.Value;

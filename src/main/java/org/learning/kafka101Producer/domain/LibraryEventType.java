@@ -1,4 +1,4 @@
-package org.learning.kafka101.domain;
+package org.learning.kafka101Producer.domain;
 
 public enum LibraryEventType {
     NEW, UPDATE

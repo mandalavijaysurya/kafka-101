@@ -2,9 +2,9 @@ package org.learning.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.learning.kafka101.domain.Book;
-import org.learning.kafka101.domain.LibraryEvent;
-import org.learning.kafka101.domain.LibraryEventType;
+import org.learning.kafka101Producer.domain.Book;
+import org.learning.kafka101Producer.domain.LibraryEvent;
+import org.learning.kafka101Producer.domain.LibraryEventType;
 
 
 public class TestUtil {
